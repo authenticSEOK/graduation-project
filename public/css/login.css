@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* reset */
+body,
+div,
+h3,
+input,
+label,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+@font-face {
+  font-family: nanum;
+  src: url(../font/NanumGothic.eot);
+  src: url("../font/NanumGothic.eot?#lefix") format("embaded-opentype");
+  src: url("../font/NanumGothic.ttf") format("truetype");
+  src: url("../font/NanumGothic.woff") format("woff");
+}
+/* wrap부분 */
+#wrap {
+  width: 350px;
+  height: 575px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+#wrap h3 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+/* 광고 */
+#section {
+  width: 350px;
+  height: 80px;
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#section img {
+  position: absolute;
+  bottom: 0;
+}
+#section > p {
+  position: absolute;
+  left: 75px;
+  font-size: 14px;
+  color: #fff;
+}
+#section > p:nth-of-type(1) {
+  bottom: 40%;
+  color: #999999;
+}
+#section > p:nth-of-type(2) {
+  bottom: 21%;
+  font-weight: bolder;
+  color: #000;
+}
+/* 입력칸 */
+.u_id input,
+.u_pwd input,
+.login_sub input {
+  width: 350px;
+  height: 45px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+}
+
+/* 로그인 버튼 */
+.login_sub input {
+  background-color: #6837f8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.login_sub:hover input {
+  background-color: #512cc0;
+}
+
+/* 고객센터 안내 */
+.infor {
+  float: left;
+  text-align: left;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #2e3235;
+}
+.infor strong {
+  font-weight: bolder;
+  color: #000;
+}

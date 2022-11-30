@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>공구함</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/reset1.css">
+  <link href="css/jquery.bxslider.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/js1.js"></script>
+  <script src="js/firebase.js"></script>
+</head>
+
+<body>
+  <div id="quick_wrap">
+    <ul class="quick">
+      <li><a href="login.html">로그인</a></li>
+      <li><a href="#">마이페이지</a></li>
+      <li><a href="#">장바구니</a></li>
+    </ul>
+  </div>
+  <!--quick_wrap-->
+  <header id="top">
+    <nav id="main_navi">
+      <a href="https://placeholder.com">
+        <img src="https://via.placeholder.com/100" alt="이달의 HOT 공구 딜">
+      </a>
+      <ul id="sub_wrap">
+        <li><a href="#">공구함 소개
+            <ul class="subm">
+              <li><a href="#">인사이드</a></li>
+              <li><a href="#">사이트 이용 약관</a></li>
+            </ul>
+          </a></li>
+        <li><a href="#">같이사요!
+            <ul class="subm">
+              <li><a href="#">서울/경기/인천</a></li>
+              <li><a href="#">강원</a></li>
+              <li><a href="#">충북</a></li>
+              <li><a href="#">대전/충남</a></li>
+              <li><a href="#">대구/경북</a></li>
+              <li><a href="#">전북</a></li>
+              <li><a href="#">광주/전남</a></li>
+              <li><a href="#">부산/울산/경남</a></li>
+            </ul>
+          </a></li>
+        <li><a href="#">신고해요</a></li>
+        <li><a href="#"> 공구함 제휴 확인
+            <ul class="subm">
+              <li><a href="#">제휴 안내</a></li>
+              <li><a href="#">제휴 단계 </a></li>
+            </ul>
+          </a></li>
+        <li><a href="#">고객센터
+            <ul class="subm">
+              <li><a href="#">1대1 문의</a></li>
+              <li><a href="#">나의 문의 내역</a></li>
+              <li><a href="#">자주 묻는 질문</a></li>
+              <li><a href="#">전화/톡 상담</a></li>
+            </ul>
+          </a></li>
+        <li><a href="#">EVENT
+            <ul class="subm">
+              <li><a href="#">진행중인 이벤트</a></li>
+              <li><a href="#">이벤트 당첨 확인</a></li>
+              <li><a href="#">이벤트 문의</a></li>
+            </ul>
+          </a></li>
+        <li><a href="#">공지사항
+            <ul class="subm">
+              <li><a href="#">이주의 공지</a></li>
+              <li><a href="#">이달의 공지</a></li>
+            </ul>
+          </a></li>
+        <li>
+          <a href="#"><img src="image/button/btn_menu_ico.png" alt="메뉴버튼" width="30" height="30"></a>
+        </li>
+      </ul>
+    </nav>
+    <!--main_navi-->
+  </header>
+  <!--topi-->
+
+
+  <div class="s_banner_wrap">
+    <ul class="bxslider_01">
+      <li class="banner_01">
+        <a href="https://placeholder.com">
+          <img src="https://via.placeholder.com/650" alt="금주HOT 공구 딜" data-n="1">
+        </a>
+      </li>
+      <li class="banner_02">
+        <a href="https://placeholder.com">
+          <img src="https://via.placeholder.com/650" alt="금주HOT 공구 딜" data-n="2">
+        </a>
+      </li>
+      <li class="banner_03">
+        <a href="https://placeholder.com">
+          <img src="https://via.placeholder.com/650" alt="금주HOT 공구 딜" data-n="3">
+        </a>
+      </li>
+      <li class="banner_04">
+        <a href="https://placeholder.com">
+          <img src="https://via.placeholder.com/650" alt="금주HOT 공구 딜" data-n="4">
+        </a>
+      </li>
+
+      <li class="banner_05">
+        <a href="https://placeholder.com">
+          <img src="https://via.placeholder.com/650" alt="금주HOT 공구 딜" data-n="5">
+        </a>
+      </li>
+
+      <li class="banner_06">
+        <a href="https://placeholder.com">
+          <img src="https://via.placeholder.com/650" alt="금주HOT 공구 딜" data-n="6">
+        </a>
+      </li>
+
+      <li class="banner_07">
+        <a href="https://placeholder.com">
+          <img src="https://via.placeholder.com/650" alt="금주HOT 공구 딜" data-n="7">
+        </a>
+      </li>
+
+      <li class="banner_08">
+        <a href="https://placeholder.com">
+          <img src="https://via.placeholder.com/650" alt="금주HOT 공구 딜" data-n="8">
+        </a>
+      </li>
+
+      <li class="banner_09">
+        <a href="https://placeholder.com">
+          <img src="https://via.placeholder.com/650" alt="금주HOT 공구 딜" data-n="9">
+        </a>
+      </li>
+    </ul>
+    <!--bxslider_01-->
+  </div>
+  <!--s_banner_wrap-->
+  <div id="sub_1">
+    <h6>
+      <span>HOT딜</span>
+      <a href="#">
+        행사 상품 모두보기
+        <img src="image/icon/carbon_chevron-right.png" alt="행사 상품 모두보기 바로가기" width="20" height="20">
+      </a>
+    </h6>
+
+    <div class="s_banner_wrap2">
+      <ul class="bxslider_02">
+        <li class="banner2_01 banner">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="HOT딜 모아보기" data-n="7">
+            </a>
+            <p> NCT1997 </p>
+            <h5>50000원</h5>
+          </a>
+        </li>
+        <li class="banner2_02 banner">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="HOT딜 모아보기" data-n="7">
+            </a>
+            <p> NCT1999 </p>
+            <h5>60000원</h5>
+          </a>
+        </li>
+        <li class="banner2_02">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="HOT딜 모아보기" data-n="7">
+            </a>
+            <p>BTS X 쨔스틴 비바(한국 단독 발매 한정판 앨범)</p>
+            <h5>100000원</h5>
+          </a>
+        </li>
+        <li class="banner2_03">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="HOT딜 모아보기" data-n="7">
+            </a>
+            <p>이수만 친필싸인 & 특전</p>
+            <h5>10000원</h5>
+          </a>
+        </li>
+        <li class="banner2_03">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="HOT딜 모아보기" data-n="7">
+            </a>
+            <p>에스파 미니앨범 - life is 뭔들</p>
+            <h5>80000원</h5>
+          </a>
+        </li>
+        <li class="banner2_04">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="HOT딜 모아보기" data-n="7">
+            </a>
+            <p>산미요 레고(한정판)</p>
+            <h5>50000원</h5>
+          </a>
+        </li>
+        <li class="banner2_05">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="HOT딜 모아보기" data-n="7">
+            </a>
+            <p>아이폰15 pro max 디지털 케이스</p>
+            <h5>25000원</h5>
+          </a>
+        </li>
+        <li class="banner2_06">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="HOT딜 모아보기" data-n="7">
+            </a>
+            <p>산미요 스페샬 키링</p>
+            <h5>18000원</h5>
+          </a>
+        </li>
+
+        <li class="banner2_07">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="HOT딜 모아보기" data-n="7">
+            </a>
+            <p>레드벨벳 포카 2023 - sp </p>
+            <h5>20000원</h5>
+          </a>
+        </li>
+        <li class="banner2_08">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="HOT딜 모아보기" data-n="7">
+            </a>
+            <p>아메리카노 맛 껌 10개</p>
+            <h5>20000원</h5>
+          </a>
+        </li>
+      </ul>
+      <!--bxslider_02-->
+    </div>
+    <!--s_banner_wrap2-->
+  </div>
+  <!--sub1-->
+  <div id="ad">
+    <h5>지역 인증으로 안전하게, 더 저렴하게 구매하세요!</h5>
+    <p>내 손안의 작은 마켓, 공구함 지금바로 다운받으세요 @.@ </p>
+    <div id="download">
+      <h4>공구함 설치</h4>
+      <img src="image/icon/ico_btn_down.png" alt="다운로드이미지" width="20" class="d_img">
+    </div>
+    <!--download-->
+  </div>
+  <!--ad-->
+  <div id="sub_2">
+    <h6>
+      <span>지역별 인기 상품</span>
+      <a href="#">
+        지역인기 상품 모두보기
+        <img src="image/icon/carbon_chevron-right.png" alt=" 지역인기 상품 모두보기 바로가기" width="20" height="20">
+      </a>
+    </h6>
+    <div class="s_banner_wrap2">
+      <ul class="bxslider_03">
+        <li class="banner3_01">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="지역인기 상품">
+            </a>
+            <p>경기</p>
+            <h5>아이돌 앨범</h5>
+          </a>
+        </li>
+        <li class="banner3_02">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="지역인기 상품">
+            </a>
+            <p>서울</p>
+            <h5>스마트폰 악세사리/충전기</h5>
+          </a>
+        </li>
+        <li class="banner3_03">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="지역인기 상품">
+            </a>
+            <p>인천</p>
+            <h5>중고차</h5>
+          </a>
+        </li>
+        <li class="banner3_04">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="지역인기 상품">
+            </a>
+            <p>강원</p>
+            <h5>농산물</h5>
+          </a>
+        </li>
+        <li class="banner3_05">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="지역인기 상품">
+            </a>
+            <p>충북</p>
+            <h5>제철 과일</h5>
+          </a>
+        </li>
+        <li class="banner3_06">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="지역인기 상품">
+            </a>
+            <p>대전/충남</p>
+            <h5>스포츠/레저 용품</h5>
+          </a>
+        </li>
+        <li class="banner3_07">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="지역인기 상품">
+            </a>
+            <p>2080)대구/경북</p>
+            <h5>책</h5>
+          </a>
+        </li>
+        <li class="banner3_08">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="지역인기 상품">
+            </a>
+            <p>전북</p>
+            <h5>의류</h5>
+          </a>
+        </li>
+
+        <li class="banner3_09">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="지역인기 상품">
+            </a>
+            <p>광주/전남</p>
+            <h5>전자기기</h5>
+          </a>
+        </li>
+        <li class="banner3_10">
+          <a href="#">
+            <a href="https://placeholder.com">
+              <img src="https://via.placeholder.com/150" alt="지역인기 상품">
+            </a>
+            <p>부산/울산/경남</p>
+            <h5>해산물</h5>
+          </a>
+        </li>
+      </ul>
+      <!--bxslider_03-->
+    </div>
+    <!--s_banner_wrap2-->
+  </div>
+  <!--sub_2-->
+  <div id="search_wrap">
+    <div class="search">
+      <h3>지금 나랑 공구할 사람은?</h3>
+      <h4>공구함의 다양한 상품을 소개합니다!</h4>
+      <input type="text" placeholder="마크를 검색해보세요!">
+      <img src="./image/icon/ico_search.png" alt="search">
+    </div>
+    <!--search-->
+    <div id="ballon">
+      <div class="ballon ballon_1">
+        <img src="./image/icon/ico_need_cate01..png" alt="스마트폰">
+        <p>전자기기</p>
+      </div>
+      <div class="ballon ballon_2">
+        <img src="./image/icon/ico_need_cate02.png" alt="자동차">
+        <p>탈것</p>
+      </div>
+      <div class="ballon ballon_3">
+        <img src="./image/icon/ico_need_cate03.png" alt="오토바이">
+        <p>탈것</p>
+      </div>
+      <div class="ballon ballon_4">
+        <img src="./image/icon/ico_need_cate04.png" alt="자전거">
+        <p>탈것</p>
+      </div>
+      <div class="ballon ballon_5">
+        <img src="./image/icon/ico_need_cate05.png" alt="전동킥보드">
+        <p>탈것</p>
+      </div>
+      <div class="ballon ballon_6">
+        <img src="./image/icon/ico_need_cate06.png" alt="앨범,사진">
+        <p>굿즈</p>
+      </div>
+      <div class="ballon ballon_7">
+        <img src="./image/icon/ico_need_cate07.png" alt="코트">
+        <p>의류</p>
+      </div>
+    </div>
+    <!--#ballon-->
+  </div>
+  <!--search_wrap-->
+  <div id="info_wrap">
+    <div id="info">
+      <h3>공구 방법</h3>
+      <p>
+        사기위험 없이 안전하게!<br>
+        공동구매로 더 저렴하게!
+      </p>
+      <p>
+        <!-- <img src="image/info_bnr01.png.png" alt="장바구니 그림" height="200"> -->
+      </p>
+      <p>
+        <img src="image/icon/bi_arrow-right.png" alt="바로가기" width="35">
+      </p>
+    </div>
+    <!--info-->
+    <div id="fnq">
+      <h3>지역변경</h3>
+      <p>
+        어디로 이동하셨나요?<br>
+        변경해 드립니다!
+      </p>
+      <p><img src="image/info_bnr02.png" alt="CUFNQ" height="200"></p>
+      <p>
+        <img src="image/icon/bi_arrow-right.png" alt="바로가기" width="35">
+      </p>
+    </div>
+    <!--fnq-->
+  </div>
+  <!--info_wrap-->
+  <div id="search_wrap2">
+    <div class="search2">
+      <h3>
+        찾는 물건 어디있지?
+      </h3>
+      <h4>갖고싶은 공구를 찾아보세요!</h4>
+      <input type="text" placeholder="산리오를 입력해보세요.">
+      <img src="./image/icon/ico_search.png" alt="search">
+    </div>
+    <!--search2-->
+
+  </div>
+  <!--search_wrap2-->
+
+  <div id="footer_wrap">
+    <footer>
+      <div id="footer_l">
+        <p>
+          <!-- <a href="#"><img src="image/cu_gray_logo.png" alt="CU로고_footer"></a> -->
+        </p>
+        <h3>
+          한세대학교 서울시 강남구 테헤란로 405(삼성동)
+          <span>COPYRIGHT &copy; HanseiUniv ALL RIGHT RESERVED</span>
+        </h3>
+        <p>TEL:1577-8007</p>
+        <ul>
+          <li>
+            <a href="#"><img src="image/footer_facebook.png" alt="페이스북로고" width="20"></a>
+          </li>
+          <li>
+            <a href="#"><img src="image/footer_twitter.png" alt="트위터로고" width="20"></a>
+          </li>
+          <li>
+            <a href="#"><img src="image/footer_blog.png" alt="네이버블로그 로고" width="45"></a>
+          </li>
+        </ul>
+      </div>
+      <!--footer_l-->
+      <div id="footer_r">
+        <div id="footer_quick">
+          <h4>Quick Menu</h4>
+          <ul>
+            <li><a href="#">제휴안내</a></li>
+            <li><a href="#">매칭하기</a></li>
+            <li><a href="#">통신법규약고시</a></li>
+            <li><a href="#">전자세금계산서</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">물품인증</a></li>
+            <li><a href="#">공구 취소 처리</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+        </div>
+        <!--footer_quick-->
+        <div id="notice">
+          <h4>Family Site</h4>
+          <ul>
+            <li><a href="#">공구함 알리기</a></li>
+            <li><a href="#">공구함 유튜브</a></li>
+            <li><a href="#">판매자 연동</a></li>
+          </ul>
+
+        </div>
+        <!--footer_family-->
+      </div>
+      <!--footer_r-->
+    </footer>
+  </div>
+  <!--footer_wrap-->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyC_0hF9daInup8t-Zs_xjavIbXzUV0-oBA",
+      authDomain: "purchase-8396b.firebaseapp.com",
+      projectId: "purchase-8396b",
+      storageBucket: "purchase-8396b.appspot.com",
+      messagingSenderId: "594431475342",
+      appId: "1:594431475342:web:16e46dce965c9ebf6753df",
+      measurementId: "G-BJ3N068FCV"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+</body>
+
+</html>
