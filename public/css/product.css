@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+
+#main_navi {
+    position: relative;
+    min-width: 1280px;
+  }
+  
+  #main_navi > ul {
+    height: 65px;
+    line-height: 65px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 250px;
+  }
+  
+  #main_navi > ul > li {
+    display: inline;
+    height: 65px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  
+  #main_navi > ul > li:nth-of-type(8) > a {
+    margin-right: 40px;
+  }
+  #main_navi > a:nth-of-type(1) {
+    width: 108px;
+    z-index: 3;
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+  }
+  
+  #main_navi > ul > li > a {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  
+  #main_navi > ul > li > ul {
+    background-color: #37d243;
+    border-radius: 10px;
+    width: 120px;
+  
+  
+  }
+  #main_navi > ul > li:nth-child(1) > ul{
+    height: 100px;
+  }
+  #main_navi > ul > li:nth-child(2) > ul{
+    height: 255px;
+  
+  }
+  #main_navi > ul > li:nth-child(4) > ul{
+    height: 90px;
+  
+  }
+  #main_navi > ul > li:nth-child(5) > ul{
+    height: 150px;
+  
+  }
+  #main_navi > ul > li:nth-child(6) > ul{
+    height: 120px;
+  
+  }
+  #main_navi > ul > li:nth-child(7) > ul{
+    height: 90px;
+  
+  }
+  
+  .subm li {
+    clear: both;
+    font-size: 14px;
+    height: 28px;
+  }
+  .subm li a{
+    display: block;
+    color: #ffffff;
+  
+  
+  }
+  .subm li a:hover {
+    text-decoration: underline;
+  }
+#main {
+  width: 1000px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+#product_item {
+  float: left;
+}
+#product_info {
+  float: right;
+  margin-right: 320px;
+  margin-top: 10px;
+}
+#product_info  h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#product_info  h3{
+    font-size: 20px;
+
+}
+#review{
+    margin-top: 20px;
+}
+button{
+    width: 300px;
+    height: 50px;
+    margin-top: 60px;
+    border: none;
+    font-weight: bold;
+    background-color: #6837f8;
+    color: white;
+}
+button:hover{
+    opacity: 0.8;
+}
+.star {
+    background: url(image/review2.png) no-repeat;
+    width: 50px;
+    height: 49px;
+    display: inline-block;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+
+.on {
+    background-image: url(image/review1.png);
+}
+
+#login_list {
+    width: 1000px;
+    height: 50px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login_list li {
+    float: left;
+    width: 500px;
+    height: 50px;
+}
+
+#login_list li a {
+    width: 500px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    border-bottom: 1px solid #999999;
+    color: #333333;
+}
+
+#login_list li a.selected1 {
+    border: 1px solid #999999;
+    border-bottom: none;
+    width: 480px;
+    font-weight: bold;
+}
+
+/*js*/
+
+/* login_con 회원로그인. 비회원(주문조회) 내용 */
+#login_con {
+    clear: both;
+    width: 540px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login1 {
+    width: 540px;
+}
+
+/*회원로그인 전체*/
+#u_id,
+#u_pwd {
+    border: 1px solid #cccccc;
+    width: 534px;
+    height: 50px;
+    text-indent: 1em;
+    margin-bottom: 10px;
+}

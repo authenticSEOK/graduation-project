@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset1.css">
+    <link rel="stylesheet" href="css/product.css">
+    <script>
+        $(document).ready(function () {
+            $("#review span").click(function () {
+                $("#review span").removeClass("on");
+                $(this).addClass("on");
+                $(this).prevAll("span").addClass("on");
+            });
+            $(".subm").css("visibility", "hidden");
+            $("#sub_wrap li").hover(function () {
+                $(this).children("ul .subm").css("visibility", "visible");
+            }, function () {
+                $(this).children("ul .subm").css("visibility", "hidden");
+            });
+            $(
+                ".login_box:not(" + $("#login_list li a.selected1").attr("href") + ")"
+            ).hide();
+
+            $("#login_list li a").click(function () {
+                $("#login_list li a").removeClass("selected1");
+                $(this).addClass("selected1");
+                $(".login_box").hide();
+                $($(this).attr("href")).show();
+                return false;
+            });
+        });
+    </script>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div id="quick_wrap">
+        <ul class="quick">
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">장바구니</a></li>
+        </ul>
+    </div>
+    <!--quick_wrap-->
+    <header id="top">
+        <nav id="main_navi">
+            <a href="https://placeholder.com">
+                <img src="https://via.placeholder.com/100" alt="이달의 HOT 공구 딜">
+            </a>
+            <ul id="sub_wrap">
+                <li><a href="#">공구함 소개
+                        <ul class="subm">
+                            <li><a href="#">인사이드</a></li>
+                            <li><a href="#">사이트 이용 약관</a></li>
+                        </ul>
+                    </a></li>
+                <li><a href="#">같이사요!
+                        <ul class="subm">
+                            <li><a href="#">서울/경기/인천</a></li>
+                            <li><a href="#">강원</a></li>
+                            <li><a href="#">충북</a></li>
+                            <li><a href="#">대전/충남</a></li>
+                            <li><a href="#">대구/경북</a></li>
+                            <li><a href="#">전북</a></li>
+                            <li><a href="#">광주/전남</a></li>
+                            <li><a href="#">부산/울산/경남</a></li>
+                        </ul>
+                    </a></li>
+                <li><a href="#">신고해요</a></li>
+                <li><a href="#"> 공구함 제휴 확인
+                        <ul class="subm">
+                            <li><a href="#">제휴 안내</a></li>
+                            <li><a href="#">제휴 단계 </a></li>
+                        </ul>
+                    </a></li>
+                <li><a href="#">고객센터
+                        <ul class="subm">
+                            <li><a href="#">1대1 문의</a></li>
+                            <li><a href="#">나의 문의 내역</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">전화/톡 상담</a></li>
+                        </ul>
+                    </a></li>
+                <li><a href="#">EVENT
+                        <ul class="subm">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">이벤트 당첨 확인</a></li>
+                            <li><a href="#">이벤트 문의</a></li>
+                        </ul>
+                    </a></li>
+                <li><a href="#">공지사항
+                        <ul class="subm">
+                            <li><a href="#">이주의 공지</a></li>
+                            <li><a href="#">이달의 공지</a></li>
+                        </ul>
+                    </a></li>
+                <li>
+                    <a href="#"><img src="image/button/btn_menu_ico.png" alt="메뉴버튼" width="30" height="30"></a>
+                </li>
+            </ul>
+        </nav>
+        <!--main_navi-->
+    </header>
+    <!--topi-->
+    <div id="main">
+        <section id="product_item">
+            <a href="https://placeholder.com">
+                <img src="https://via.placeholder.com/350" alt="금주HOT 공구 딜" data-n="1">
+            </a>
+        </section>
+        <section id="product_info">
+            <h2>산리오 포챠코</h2>
+            <h3>15,000원</h3>
+            <p id="review">
+                <span class="star on">별1</span>
+                <span class="star">별2</span>
+                <span class="star">별3</span>
+                <span class="star">별4</span>
+                <span class="star">별5</span>
+            </p>
+            <button type="button">구매하기</button>
+        </section>
+
+
+    </div>
+    <div>
+        <ul id="login_list">
+            <li><a href="#login1" class="selected1">상품정보</a></li>
+            <li><a href="#login2">리뷰</a></li>
+        </ul>
+        <div id="login_con">
+            <div id="login1" class="login_box">
+                상품정보
+            </div>
+            <!--회원로그인 전체내용-->
+            <div id="login2" class="login_box">
+                리뷰임
+            </div>
+        </div>
+</body>
+
+</html>
