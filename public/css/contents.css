@@ -163,12 +163,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 120px;
+  
 }
 .bxslider {
   display: flex;
   width: 100%;
   height: 310px;
-  background: none;
+  background: none;  
 }
 
 .bxslider li img {
@@ -177,6 +178,7 @@ body {
 .banner_01 {
   width: 600px;
   height: 310px;
+  
 }
 .banner_02 {
   width: 600px;
@@ -459,8 +461,7 @@ body {
   color: #000;
 }
 
-/* CU상품 검색 */
-/* CU상품 검색 좌측 */
+
 
 #search_wrap {
   width: 1200px;
@@ -505,7 +506,7 @@ body {
   bottom: 40px;
   cursor: pointer;
 }
-/* CU상품 검색 우측 */
+
 
 #ballon {
   float: right;
@@ -785,7 +786,7 @@ footer {
   margin-top: 5px;
 }
 #footer_l p:nth-of-type(2) {
-  font-size: 13px;
+  font-size: 12px;
 }
 #footer_l ul {
   margin-top: 30px;
@@ -827,7 +828,7 @@ footer {
   margin-right: 0;
 }
 #footer_r ul:last-child {
-  float: right;
+  float: left;
 }
 #footer_r ul li:first-child {
   margin-top: 25px;
